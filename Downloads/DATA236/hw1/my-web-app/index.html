@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>HW 1 - Rish Jain</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2e85db;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return validateForm()">
+        <h1>My Blog</h1>
+        <div><label for="title"><strong>Title</strong> *</label></div>
+        <div>
+            <input 
+                type="text"
+                id="title"
+                placeholder="Enter the title of your blog"
+                required
+                autofocus
+            >
+        </div>
+        <div><label for="name"><strong>Name</strong> *</label></div>
+        <div>
+            <input 
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+        </div>
+        <div><label for="email"><strong>Email</strong> *</label></div>
+        <div>
+            <input 
+                type="text"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+        <div><label for="content"><strong>Content</strong> *</label></div>
+        <div>
+            <input 
+                type="text"
+                id="content"
+                placeholder="Write your content here..."
+                required
+            >
+        </div>
+        <label for="category"><strong>Category</strong>:</label>
+        <select id="category" name="category" required>
+            <option value="">Select category</option>
+            <option value="tech">Technology</option>
+            <option value="life">Lifestyle</option>
+            <option value="travel">Travel</option>
+            <option value="education">Education</option>
+        </select>
+        <div>
+        <label><input type="checkbox" id="terms"><strong> I agree to the terms and conditions </strong></label>
+        </div>
+        <div>
+        <input
+                type="submit"
+                value="Publish Blog"
+            >
+        </div>
+    </form>
+    <script src="jain_form.js"></script>
+</body>
+</html>
